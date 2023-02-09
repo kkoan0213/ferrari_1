@@ -28,7 +28,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    color: #dd0e0e;
+    color: #fff;
     font-size: 5vw;
     flex-direction: column;
     padding: 20% 10%;
@@ -42,6 +42,9 @@
 } */
 .sub-menu-box .sub-menu{
     padding-bottom: 50px;
+}
+.sub-menu-box .sub-menu:hover{
+    color: #d12222;
 }
 .logo{
     position: absolute;
