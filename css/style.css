@@ -1,0 +1,329 @@
+#wrap{
+    overflow: hidden;
+}
+.video-box{
+    position: relative;
+    height: 100vh;
+}
+#header-area{
+    height: 80px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-area.active{
+    background-color: #181818;
+}
+#hamburger{
+    display: none;
+}
+.sub-menu-box{
+    background-color: #181818;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #dd0e0e;
+    font-size: 5vw;
+    flex-direction: column;
+    padding: 20% 10%;
+    display: none;
+    opacity: 0.8;
+}
+/* .sub-menu-box.active{
+    display: flex;
+    opacity: 0.8;
+    transition: 0.5s;
+} */
+.sub-menu-box .sub-menu{
+    padding-bottom: 50px;
+}
+.logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+}
+.header-txt-area{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: #fff;
+    font-size: 0.65rem;
+    width: 40%;
+    transition: 0.3s;
+}
+.header-txt-area .header-txt{
+    margin-right: 24px;
+    letter-spacing: 2px;
+}
+.sec-1{
+    width: 100vw;
+    height: 100vh;
+}
+.slider .txt-box{
+    position: absolute;
+    display: block;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #D9D9D9;
+}
+.slider .txt-box .txt-t,
+.slider .txt-box .txt-m,
+.slider .txt-box .txt-b{
+    padding-bottom: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+.slider .txt-box .txt-m{
+    font-size: 3rem;
+}
+.slider .txt-box .txt-b{
+    cursor: pointer;
+}
+.sec-2{
+    width: 100%;
+    height: 1000px;
+    background-color: #D9D9D9;
+}
+.sec-2 .container{
+    width: 100%;
+    height: 100%;
+}
+.slide-wrap-box{
+    height: 80%;
+    width: 80%;
+    padding: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-2-slide{
+    right: 5%;
+}
+.txt-area{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.txt-area-slider-1,
+.txt-area-slider-2,
+.txt-area-slider-3,
+.txt-area-slider-4{
+    text-align: left;
+}
+.txt-t{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.txt-m{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.txt-b{
+    font-size: 0.8rem;
+}
+.sec-2-txt .txt-b .play-btn{
+    background-color: #181818;
+    border-radius: 50%; 
+}
+.txt-t,
+.txt-b,
+.txt-b{
+    padding-bottom: 20px;
+}
+.img-area{
+    width: 50%;
+    height: 50%;
+    left: 5%;
+}
+
+.sec-3{
+    height: 1950px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #181818;
+    /* overflow: hidden; */
+}
+.sec-3 .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.5;
+    height: 100%;
+}
+.l-1-box, .r-1-box,
+.l-2-box, .r-2-box,
+.l-3-box, .r-3-box{
+    display: block;
+    width: 50%;
+    height: 33.333%;
+    position: relative;
+    transition: 1s;
+}
+.l-1-box .txt-box, .r-1-box .txt-box,
+.l-2-box .txt-box, .r-2-box .txt-box,
+.l-3-box .txt-box, .r-3-box .txt-box{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+.footer{
+    background-color: #181818;
+    height: 400px;
+    width: 100%;
+}
+.news-box{
+    background-color: #383838;
+    height: 40px;
+    width: 100%;
+    display: block;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-txt-box{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+.footer-txt-box .box{
+    margin: 50px;
+    color: #fff;
+    font-size: 0.5rem;
+    text-align: center;
+}
+.footer-txt-box .box h1{
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.footer-txt-box .box p{
+    padding-bottom: 5px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: #181818 !important;
+}
+
+/* 960px이하 */
+@media (max-width: 960px){
+    .header-txt-area{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        z-index: 99999;
+        position: relative;
+        width: 20px;
+        height: 16px;
+        left: 15px;
+        transition: 0.3s;
+    }
+    #hamburger span{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    #hamburger span:first-child{
+        top: 0;
+        left: 0;
+    }
+    #hamburger span:last-child{
+        top: 10px;
+        left: 0;
+    }
+    #hamburger.active span:first-child{
+        transform: translateY(10px);
+    }
+    #hamburger.active span:last-child{
+        transform: translateY(-10px);
+    }
+    .sec-2{
+        height: 1000px;
+    }
+    .slide-wrap-box{
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .img-area{
+        left: 0;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        opacity: 0;
+    }
+    .sec-2-slide{
+        width: 100%;
+        padding: 0;
+    }
+    .txt-area{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px){
+    .sec-3 .container{
+        display: block;
+    }
+    .l-1-box, .r-1-box,
+    .l-2-box, .r-2-box,
+    .l-3-box, .r-3-box{
+        width: 100%;
+        display: block;
+        height: 16.666%;
+    }
+    .footer{
+        height: 500px;
+        display: block;
+    }
+    .footer-txt-box{
+        display: block;
+    }
+    .footer-txt-box .box{
+        margin: 10px;
+    }
+    .inner-txt1,
+    .inner-txt2,
+    .inner-txt3,
+    .inner-txt4,
+    .inner-txt5{
+        cursor: pointer;
+        padding-bottom: 0;
+    }
+    .inner-txt1 .box-p,
+    .inner-txt2 .box-p,
+    .inner-txt3 .box-p,
+    .inner-txt4 .box-p,
+    .inner-txt5 .box-p
+    {
+        display: none;
+    }
+    /* .inner-txt1 .box-p.active,
+    .inner-txt2 .box-p.active,
+    .inner-txt3 .box-p.active,
+    .inner-txt4 .box-p.active,
+    .inner-txt5 .box-p.active
+    {
+        display: block;
+    } */
+}
